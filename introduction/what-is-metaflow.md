@@ -1,6 +1,6 @@
 # What is Metaflow
 
-Metaflow is a human-friendly Python library that helps scientists and engineers build and manage real-life data science projects. Metaflow was originally developed at Netflix to boost productivity of data scientists who work on a wide variety of projects from classical statistics to state-of-the-art deep learning.
+Metaflow is a human-friendly R library that helps scientists and engineers build and manage real-life data science projects. Metaflow was originally developed at Netflix to boost productivity of data scientists who work on a wide variety of projects from classical statistics to state-of-the-art deep learning.
 
 Metaflow provides a unified API to the infrastructure stack that is required to execute data science projects, from prototype to production.
 
@@ -12,13 +12,13 @@ Models are only a small part of an end-to-end data science project. Production-g
 
 Data is accessed from a **data warehouse**, which can be a folder of files, a database, or a multi-petabyte data lake. The modeling code that crunches the data is executed in a **compute environment** which can range from a laptop to a large-scale container management system. A **job scheduler** is often used to orchestrate multiple units of work.
 
-How do you **architect** the code to be executed? Should you structure it as an object hierarchy, Python modules, or packages? How do you **version** the code, input data, and models produced? Preferably, data scientists wouldn't have to spend too much energy thinking about the software architecture.
+How do you **architect** the code to be executed? Should you structure it as an object hierarchy, R functions, or packages? How do you **version** the code, input data, and models produced? Preferably, data scientists wouldn't have to spend too much energy thinking about the software architecture.
 
 After the model has been deployed to production, **model operations** become a pertinent question: how do you keep the code running reliably in production? How do you monitor its performance? How do you deploy new versions of the code to run in parallel with the previous version? The software industry has spent over a decade perfecting DevOps best practices for normal software. We are just getting started with data science.
 
 At the very top of the stack there's the question of how you produce **features** for your models, and you **develop models** in the first place, maybe using off-the-shelf libraries. This is the area where the skills of a data scientist become most useful.
 
-Metaflow provides a unified, human-friendly approach to navigating the stack. Metaflow is more prescriptive about the lower levels of the stack but it is less opinionated about the actual data science at the top of the stack. You can use Metaflow with your favorite machine learning or data science libraries, such as [PyTorch](https://pytorch.org), [Tensorflow](https://tensorflow.org), or [SciKit Learn](https://scikit-learn.org/stable/). Metaflow allows you to write your models and business logic as idiomatic Python code with not much new to learn.
+Metaflow provides a unified, human-friendly approach to navigating the stack. Metaflow is more prescriptive about the lower levels of the stack but it is less opinionated about the actual data science at the top of the stack. Metaflow allows you to write your models and business logic as idiomatic R code with not much new to learn.
 
 Internally, Metaflow leverages existing infrastructure when feasible. In particular, it is [tightly integrated with Amazon Web Services](https://github.com/jasonge27/metaflow-docs/tree/4977f6113cad60e621fba0cc9bcf38bf85316c13/metaflow-on-aws/metaflow-on-aws.md). The core value proposition of Metaflow is its integrated full-stack, human-centric API, rather than reinvention of the stack itself.
 
@@ -36,22 +36,9 @@ You can find more details about Metaflow's approach to various parts of the stac
 | :--- | :--- |
 
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left"><b>Model Operations</b>
-      </th>
-      <th style="text-align:left">
-        <p><a href="https://github.com/jasonge27/metaflow-docs/tree/4977f6113cad60e621fba0cc9bcf38bf85316c13/metaflow/debugging.md">Debugging with Metaflow</a> and
-          <a
-          href="https://github.com/jasonge27/metaflow-docs/tree/4977f6113cad60e621fba0cc9bcf38bf85316c13/metaflow/failures.md">Dealing with Failures</a>
-        </p>
-        <p>(also see <a href>Roadmap</a>)</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| **Model Operations** | [Debugging with Metaflow](https://github.com/jasonge27/metaflow-docs/tree/4977f6113cad60e621fba0cc9bcf38bf85316c13/metaflow/debugging.md) and [Dealing with Failures](https://github.com/jasonge27/metaflow-docs/tree/4977f6113cad60e621fba0cc9bcf38bf85316c13/metaflow/failures.md) |
+| :--- | :--- |
+
 
 | **Versioning** | [Inspecting Flow and Results](https://github.com/jasonge27/metaflow-docs/tree/4977f6113cad60e621fba0cc9bcf38bf85316c13/metaflow/client.md) and [Organizing Results](https://github.com/jasonge27/metaflow-docs/tree/4977f6113cad60e621fba0cc9bcf38bf85316c13/metaflow/tagging.md) |
 | :--- | :--- |
@@ -61,15 +48,11 @@ You can find more details about Metaflow's approach to various parts of the stac
 | :--- | :--- |
 
 
-| **Job Scheduler** | coming soon, see [Roadmap]() |
-| :--- | :--- |
-
-
 | **Compute Resources** | [Scaling Out and Up](https://github.com/jasonge27/metaflow-docs/tree/4977f6113cad60e621fba0cc9bcf38bf85316c13/metaflow/scaling.md) |
 | :--- | :--- |
 
 
-| **Data Warehouse** | [Basics of Metaflow](https://github.com/jasonge27/metaflow-docs/tree/4977f6113cad60e621fba0cc9bcf38bf85316c13/metaflow/basics.md) and [Loading and Storing Data](https://github.com/jasonge27/metaflow-docs/tree/4977f6113cad60e621fba0cc9bcf38bf85316c13/metaflow/data.md) |
+| **Data Warehouse** | [Basics of Metaflow](https://github.com/jasonge27/metaflow-docs/tree/4977f6113cad60e621fba0cc9bcf38bf85316c13/metaflow/basics.md)  |
 | :--- | :--- |
 
 
@@ -99,7 +82,7 @@ We don’t expect the users of Metaflow to be unicorns who are experts in softwa
 
 The first tenet implies that we must manage a great amount of inherent, irreducible complexity. Many ML infrastructures rely on GUIs, configuration, DSLs, or automation - we don’t. Most of these modalities fail to scale in terms of increasing complexity.
 
-We rely on code. General-purpose programming languages are arguably the most effective tool in building functional systems for complex use cases. The main downside of code is a steeper learning curve: for the simplest use cases, almost any other modality would provide a simpler solution. To minimize this cost, we rely on easy to learn, popular languages like Python or R.
+We rely on code. General-purpose programming languages are arguably the most effective tool in building functional systems for complex use cases. The main downside of code is a steeper learning curve: for the simplest use cases, almost any other modality would provide a simpler solution. To minimize this cost, we rely on easy to learn, popular languages like R.
 
 ### **3. Fanatic focus on the usability and ergonomics**
 
@@ -127,7 +110,7 @@ We want to embrace the idea that most projects are continuous experiments, even 
 
 The fifth tenet suggested that the user should be able to scale a Metaflow project gradually. This applies both to time and space.
 
-We embrace the fact that Python is a slow but expressive language. We encourage our users to write idiomatic Python code initially, without worrying too much about performance. If performance becomes an issue, we can provide an arsenal of tools for gradual performance optimization from performance-oriented libraries like [Numpy](https://numpy.org/) to compilers such as [Numba](http://numba.pydata.org/).
+We embrace the fact that R is a slow but expressive language. We encourage our users to write idiomatic R code initially, without worrying too much about performance. If performance becomes an issue, we can provide an arsenal of tools for gradual performance optimization from performance-oriented libraries like [Rcpp](http://www.rcpp.org/).
 
 We encourage our users to primarily rely on vertical scalability, which allows the user to focus on readable, straightforward code and easy operations. When the user hits the limits of vertical scalability, we make it easy to use horizontal, share-nothing parallelism, or hassle-free distributed learning provided e.g. by AWS Sagemaker.
 
