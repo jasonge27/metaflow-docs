@@ -8,35 +8,35 @@ description: Build and manage real-life data science projects with ease.
 
 * [Why Metaflow](introduction/why-metaflow.md)
 * [What is Metaflow](introduction/what-is-metaflow.md)
-* [Release Notes](introduction/release-notes.md)
-* [Roadmap](introduction/roadmap.md)
-* [Contributing to Metaflow](introduction/contributing-to-metaflow.md)
+* [Release Notes]()
+* [Roadmap]()
+* [Contributing to Metaflow]()
 * [Get in Touch](introduction/getting-in-touch.md)
 
 ## Getting Started
 
 * [Installing Metaflow](getting-started/install.md)
-* [Tutorials](getting-started/tutorials/)
+* [Tutorials](https://github.com/jasonge27/metaflow-docs/tree/4977f6113cad60e621fba0cc9bcf38bf85316c13/getting-started/tutorials/README.md)
 
 ## Metaflow on AWS
 
-* [Metaflow on AWS](metaflow-on-aws/metaflow-on-aws.md)
-* [Metaflow Sandbox](metaflow-on-aws/metaflow-sandbox.md)
-* [Deploying to AWS](metaflow-on-aws/deploy-to-aws.md)
+* [Metaflow on AWS](https://github.com/jasonge27/metaflow-docs/tree/4977f6113cad60e621fba0cc9bcf38bf85316c13/metaflow-on-aws/metaflow-on-aws.md)
+* [Metaflow Sandbox](https://github.com/jasonge27/metaflow-docs/tree/4977f6113cad60e621fba0cc9bcf38bf85316c13/metaflow-on-aws/metaflow-sandbox.md)
+* [Deploying to AWS](https://github.com/jasonge27/metaflow-docs/tree/4977f6113cad60e621fba0cc9bcf38bf85316c13/metaflow-on-aws/deploy-to-aws.md)
 
 ## Developing with Metaflow
 
-* [Basics of Metaflow](metaflow/basics.md)
-* [Inspecting Flows and Results](metaflow/client.md)
-* [Debugging with Metaflow](metaflow/debugging.md)
-* [Scaling Out and Up](metaflow/scaling.md)
-* [Loading and Storing Data](metaflow/data.md)
-* [Managing External Libraries](metaflow/dependencies.md)
-* [Dealing with Failures](metaflow/failures.md)
-* [Organizing Results](metaflow/tagging.md)
+* [Basics of Metaflow](https://github.com/jasonge27/metaflow-docs/tree/4977f6113cad60e621fba0cc9bcf38bf85316c13/metaflow/basics.md)
+* [Inspecting Flows and Results](https://github.com/jasonge27/metaflow-docs/tree/4977f6113cad60e621fba0cc9bcf38bf85316c13/metaflow/client.md)
+* [Debugging with Metaflow](https://github.com/jasonge27/metaflow-docs/tree/4977f6113cad60e621fba0cc9bcf38bf85316c13/metaflow/debugging.md)
+* [Scaling Out and Up](https://github.com/jasonge27/metaflow-docs/tree/4977f6113cad60e621fba0cc9bcf38bf85316c13/metaflow/scaling.md)
+* [Loading and Storing Data](https://github.com/jasonge27/metaflow-docs/tree/4977f6113cad60e621fba0cc9bcf38bf85316c13/metaflow/data.md)
+* [Managing External Libraries](https://github.com/jasonge27/metaflow-docs/tree/4977f6113cad60e621fba0cc9bcf38bf85316c13/metaflow/dependencies.md)
+* [Dealing with Failures](https://github.com/jasonge27/metaflow-docs/tree/4977f6113cad60e621fba0cc9bcf38bf85316c13/metaflow/failures.md)
+* [Organizing Results](https://github.com/jasonge27/metaflow-docs/tree/4977f6113cad60e621fba0cc9bcf38bf85316c13/metaflow/tagging.md)
 
 ## Internals of Metaflow
 
-* [Technical Overview](internals-of-metaflow/technical-overview.md)
-* [Testing Philosophy](internals-of-metaflow/testing-philosophy.md)
+* [Technical Overview](https://github.com/jasonge27/metaflow-docs/tree/4977f6113cad60e621fba0cc9bcf38bf85316c13/internals-of-metaflow/technical-overview.md)
+* [Testing Philosophy](https://github.com/jasonge27/metaflow-docs/tree/4977f6113cad60e621fba0cc9bcf38bf85316c13/internals-of-metaflow/testing-philosophy.md)
 
