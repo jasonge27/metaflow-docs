@@ -24,64 +24,79 @@ Internally, Metaflow leverages existing infrastructure when feasible. In particu
 
 You can find more details about Metaflow's approach to various parts of the stack across the documentation:
 
-|  |  |
-| :--- | :--- |
-
-
-| **Model Development** | &lt;b&gt;&lt;/b&gt;[Managing External Libraries]() |
-| :--- | :--- |
-
-
-| **Feature Engineering** | &lt;b&gt;&lt;/b&gt;[Loading and Storing Data]() |
-| :--- | :--- |
-
-
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"><b>Model Operations</b>
-      </th>
-      <th style="text-align:left">
-        <p><a href>Debugging with Metaflow</a> and <a href>Dealing with Failures</a>
-        </p>
-        <p>(also see <a href="roadmap.md">Roadmap</a>)</p>
-      </th>
+      <th style="text-align:left"></th>
+      <th style="text-align:left"></th>
     </tr>
   </thead>
-  <tbody></tbody>
-</table>
-
-| **Versioning** | [Inspecting Flow and Results]() and [Organizing Results]() |
-| :--- | :--- |
-
-
-| **Architecture** | [Basics of Metaflow]() |
-| :--- | :--- |
-
-
-| **Job Scheduler** | coming soon, see [Roadmap](roadmap.md) |
-| :--- | :--- |
-
-
-| **Compute Resources** | [Scaling Out and Up]() |
-| :--- | :--- |
-
-
-| **Data Warehouse** | [Basics of Metaflow]() and [Loading and Storing Data]() |
-| :--- | :--- |
-
+  <tbody>
+    <tr>
+      <td style="text-align:left"><b>Model Development</b>
+      </td>
+      <td style="text-align:left">&lt;b&gt;&lt;/b&gt;<a href="../metaflow/dependencies.md">Managing External Libraries</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Feature Engineering</b>
+      </td>
+      <td style="text-align:left">&lt;b&gt;&lt;/b&gt;<a href="../metaflow/data.md">Loading and Storing Data</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Model Operations</b>
+      </td>
+      <td style="text-align:left">
+        <p><a href="../metaflow/debugging.md">Debugging with Metaflow</a> and <a href="../metaflow/failures.md">Dealing with Failures</a>
+        </p>
+        <p>(also see <a href="roadmap.md">Roadmap</a>)</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Versioning</b>
+      </td>
+      <td style="text-align:left"><a href="../metaflow/client.md">Inspecting Flow and Results</a> and <a href="../metaflow/tagging.md">Organizing Results</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Architecture</b>
+      </td>
+      <td style="text-align:left"><a href="../metaflow/basics.md">Basics of Metaflow</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Job Scheduler </b>
+      </td>
+      <td style="text-align:left">coming soon, see <a href="roadmap.md">Roadmap</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Compute Resources</b>
+      </td>
+      <td style="text-align:left"><a href="../metaflow/scaling.md">Scaling Out and Up</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Data Warehouse</b>
+      </td>
+      <td style="text-align:left"><a href="../metaflow/basics.md">Basics of Metaflow</a> and <a href="../metaflow/data.md">Loading and Storing Data</a>
+      </td>
+    </tr>
+  </tbody>
+</table>## Presentations about Metaflow 
 
 If you want to learn more, the Machine Learning Infrastructure team at Netflix has given a number of public presentations about Metaflow prior to its open-sourcing. You can find links to these presentations below.
 
 For starters, this presentation gives a comprehensive overview of Metaflow:
 
-{% embed url="https://www.youtube.com/watch?v=XV5VGddmP24" caption="" %}
+{% embed url="https://www.youtube.com/watch?v=XV5VGddmP24" %}
 
 For other general overviews of Metaflow, see the [Overviews of Metaflow](https://www.youtube.com/playlist?list=PLGEBSHR02Xbg0oTf7OwZ_Kk86Zx96mAOb) playlist. For more technical details, see presentations about the [Internals of Metaflow](https://www.youtube.com/playlist?list=PLGEBSHR02XbhC-5Eqy7ERHxpuwiJHes4j).
 
 ## The Philosophy of Metaflow
 
-If you are eager to give Metaflow a try, head to the [tutorials](../getting-started/tutorials-r/). If you want to learn about the background of Metaflow in more detail, keep on reading.
+If you are eager to give Metaflow a try, head to the [tutorials](../getting-started/tutorials/). If you want to learn about the background of Metaflow in more detail, keep on reading. 
 
 Metaflow was originally designed and built to address practical pain points of data scientist at Netflix. Its design philosophy is influenced by [the unique culture at Netflix](https://jobs.netflix.com/culture). The following eight tenets summarize the philosophy of Metaflow:
 
@@ -149,5 +164,5 @@ We provide highly usable tools for proactive monitoring and detection of errors,
 
 ### Conclusion
 
-Don't expect the current version of Metaflow to be a perfect manifestation of these principles. Metaflow is being actively developed. However, much of the foundation exists, and it has proven to be successful at Netflix. If this vision resonates with you, we welcome you to join the project! A good next step is to take a look at the [tutorials](../getting-started/tutorials-r/).
+Don't expect the current version of Metaflow to be a perfect manifestation of these principles. Metaflow is being actively developed. However, much of the foundation exists, and it has proven to be successful at Netflix. If this vision resonates with you, we welcome you to join the project! A good next step is to take a look at the [tutorials](../getting-started/tutorials/).
 

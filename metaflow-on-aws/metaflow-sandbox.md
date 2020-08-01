@@ -1,2 +1,0 @@
-# Metaflow Sandbox
-
